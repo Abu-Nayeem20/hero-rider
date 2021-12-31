@@ -1,0 +1,44 @@
+
+.home-area{
+    background-image: url('https://i.ibb.co/Dp5TMh0/background-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.join-rider{
+    background-color: #0c2461;
+    text-align: center;
+    padding: 80px 40px;
+    height: 100%;
+    border-radius: 8px;
+    transition: .7s;
+}
+.join-rider:hover{
+    background-color: #e55039;
+}
+.join-learner{
+    background-color: #e55039;
+    text-align: center;
+    padding: 80px 40px;
+    height: 100%;
+    border-radius: 8px;
+    transition: .7s;
+}
+.join-learner:hover{
+    background-color: #0c2461;
+}
+.join-rider button{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 8px;
+}
+.join-learner button{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 8px;
+}

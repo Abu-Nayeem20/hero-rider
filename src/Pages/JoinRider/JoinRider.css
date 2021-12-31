@@ -1,0 +1,21 @@
+.join-rider-page{
+    background-color: #0c2461de;
+    padding-bottom: 100px;
+}
+.page-title h2{
+    font-size: 34px;
+    font-weight: 700;
+}
+.join-form form label{
+    font-size: 18px;
+}
+.join-form form button{
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    padding: 15px 40px;
+    background-color: #0c2461de;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-top: 20px;
+}
