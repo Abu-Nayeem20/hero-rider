@@ -37,9 +37,13 @@ const Header = () => {
         else if(rider[0]){
             return "/rider_profile";
         }
+        else{
+            return "/";
+        }
     }
 
     // console.log(selectUrl())
+    console.log(learner[0]?.role)
 
     return (
         <div className='header'>
@@ -53,6 +57,23 @@ const Header = () => {
                     <Link to="/login">
                     <button>Login</button>
                     </Link>
+                }
+            </div>
+            <div className='packages-btn'>
+                {learner[0] && 
+                <Link to="/packages">
+                <button>Packages</button>
+                </Link>
+
+                }
+            </div>
+            <div className='dashboard-btn'>
+                {learner[0]?.role === "Admin" ||  rider[0]?.role === "Admin" ?
+                <Link to="/dashboard">
+                <button>Dashboard</button>
+                </Link>
+                :
+                <span></span>
                 }
             </div>
         </div>

@@ -8,6 +8,12 @@ import AuthProvider from './Context/AuthProvider';
 import Login from './Pages/Login/Login';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import LearnerProfile from './Pages/RiderProfile/LearnerProfile/LearnerProfile';
+import Packages from './Pages/Packages/Packages';
+import Payment from './Pages/Payment/Payment';
+import ThankYou from './Pages/ThankYou/ThankYou';
+import Dashboard from './Pages/AdminDashboard/Dashboard/Dashboard';
+import RiderUsers from './Pages/AdminDashboard/RiderUsers/RiderUsers';
+import LearnerUsers from './Pages/AdminDashboard/LearnerUsers/LearnerUsers';
 
 function App() {
   return (
@@ -25,6 +31,24 @@ function App() {
           <LearnerProfile />
         </PrivateRoute>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/packages" element={<PrivateRoute>
+          <Packages />
+          </PrivateRoute>} />
+        <Route path="/thank_you" element={<PrivateRoute>
+          <ThankYou />
+          </PrivateRoute>} />
+        <Route path="/payment/:id" element={<PrivateRoute>
+          <Payment />
+          </PrivateRoute>} />
+        <Route path="/dashboard" element={<PrivateRoute>
+          <Dashboard />
+          </PrivateRoute>} />
+        <Route path="/dashboard/rider_users" element={<PrivateRoute>
+          <RiderUsers />
+          </PrivateRoute>} />
+        <Route path="/dashboard/learner_users" element={<PrivateRoute>
+          <LearnerUsers />
+          </PrivateRoute>} />
       </Routes>
       </AuthProvider>
     </div>
