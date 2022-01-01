@@ -15,7 +15,7 @@ const Payment = () => {
     const [packages, setPackages] = useState({});
 
     useEffect( () => {
-        const url = `http://localhost:5000/packages/${id}`;
+        const url = `https://stark-island-55310.herokuapp.com/packages/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => {

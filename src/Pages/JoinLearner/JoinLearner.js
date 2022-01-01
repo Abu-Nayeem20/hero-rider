@@ -56,7 +56,7 @@ const JoinLearner = () => {
             formData.append('vehicleType', vehicleType);
 
         
-            fetch('http://localhost:5000/learners', {
+            fetch('https://stark-island-55310.herokuapp.com/learners', {
         method: 'POST',
         body: formData
     })

@@ -21,7 +21,7 @@ const SIngleRider = ({ rider }) => {
        
         const updateStatus = {status: updatedStatus};
 
-        const url = `http://localhost:5000/riderUsers/${id}`;
+        const url = `https://stark-island-55310.herokuapp.com/riderUsers/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -43,7 +43,7 @@ const SIngleRider = ({ rider }) => {
        
         const updateRole = {role: updatedRole};
 
-        const url = `http://localhost:5000/riderUsers/${id}`;
+        const url = `https://stark-island-55310.herokuapp.com/riderUsers/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {

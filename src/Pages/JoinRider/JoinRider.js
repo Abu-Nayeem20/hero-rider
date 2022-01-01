@@ -67,7 +67,7 @@ const JoinRider = () => {
                 formData.append('vehicleType', vehicleType);
     
             
-                fetch('http://localhost:5000/riders', {
+                fetch('https://stark-island-55310.herokuapp.com/riders', {
             method: 'POST',
             body: formData
         })

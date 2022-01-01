@@ -8,7 +8,7 @@ const LearnerProfile = () => {
     const [myProfile, setMyProfile] = useState({});
 
     useEffect( () => {
-        const url = `http://localhost:5000/learners?email=${user.email}`;
+        const url = `https://stark-island-55310.herokuapp.com/learners?email=${user.email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => {

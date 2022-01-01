@@ -7,7 +7,7 @@ const LearnerUsers = () => {
     const [learners, setLearners] = useState([]);
 
     useEffect( () => {
-        fetch("http://localhost:5000/learnerUsers")
+        fetch("https://stark-island-55310.herokuapp.com/learnerUsers")
         .then(res => res.json())
         .then(data => {
             setLearners(data);

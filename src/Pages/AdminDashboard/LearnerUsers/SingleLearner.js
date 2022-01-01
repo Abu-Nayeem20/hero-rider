@@ -21,7 +21,7 @@ const SingleLearner = ({ learner }) => {
        
         const updateStatus = {status: updatedStatus};
 
-        const url = `http://localhost:5000/learnerUsers/${id}`;
+        const url = `https://stark-island-55310.herokuapp.com/learnerUsers/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -43,7 +43,7 @@ const SingleLearner = ({ learner }) => {
        
         const updateRole = {role: updatedRole};
 
-        const url = `http://localhost:5000/learnerUsers/${id}`;
+        const url = `https://stark-island-55310.herokuapp.com/learnerUsers/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {

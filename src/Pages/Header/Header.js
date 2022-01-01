@@ -11,7 +11,7 @@ const Header = () => {
     const [rider, setRider] = useState({});
 
     useEffect( () => {
-        const url = `http://localhost:5000/learners?email=${user.email}`;
+        const url = `https://stark-island-55310.herokuapp.com/learners?email=${user.email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -20,7 +20,7 @@ const Header = () => {
     }, [user.email]);
 
     useEffect( () => {
-        const url = `http://localhost:5000/riders?email=${user.email}`;
+        const url = `https://stark-island-55310.herokuapp.com/riders?email=${user.email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => {

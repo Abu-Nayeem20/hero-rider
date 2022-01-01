@@ -19,7 +19,7 @@ const PaymentForm = ({ item }) => {
     const [clientSecret, setClientSecret] = useState('');
 
     useEffect( () => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://stark-island-55310.herokuapp.com/create-payment-intent', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -94,7 +94,7 @@ const PaymentForm = ({ item }) => {
         }
 
         // Order Confirm 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://stark-island-55310.herokuapp.com/orders', {
             method: "POST",
             headers: {
                 "content-type" : "application/json"
