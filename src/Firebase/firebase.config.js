@@ -1,10 +1,11 @@
+// console.log(process.env)
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  apiKey: "AIzaSyDYdzJLRtBzPbbtaun2f54K7bWPcwaX7f4",
+  authDomain: "hero-rider1.firebaseapp.com",
+  projectId: "hero-rider1",
+  storageBucket: "hero-rider1.appspot.com",
+  messagingSenderId: "258675575785",
+  appId: "1:258675575785:web:ac42ca29a22690fd519978"
   };
 
 export default firebaseConfig; 

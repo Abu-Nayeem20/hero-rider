@@ -19,3 +19,15 @@
     border-radius: 5px;
     margin-top: 20px;
 }
+.error-message{
+    text-align: center;
+    margin-top: 20px;
+}
+.error-message p{
+    background-color: brown;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: cornsilk;
+}

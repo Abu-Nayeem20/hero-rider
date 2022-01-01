@@ -6,3 +6,17 @@
 .header img{
     width: 100%;
 }
+.login-profile{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+.login-profile button{
+    background-color: #0c2461de;
+    font-size: 25px;
+    color: aliceblue;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+}
